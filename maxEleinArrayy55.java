@@ -5,6 +5,7 @@ public class maxEleinArrayy55 {
 
         Scanner sc = new Scanner(System.in);
 
+        System.out.println("enter the array size");
         int n = sc.nextInt();
 
         int arr[] = new int[n];
