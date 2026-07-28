@@ -9,7 +9,7 @@ public class maxEleinArrayy55 {
         int n = sc.nextInt();
 
         int arr[] = new int[n];
-        // each
+        // each itration
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
