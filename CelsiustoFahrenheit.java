@@ -1,14 +1,13 @@
 import java.util.Scanner;
 
-public class CelsiustoFahrenheit
- {
+public class CelsiustoFahrenheit {
 
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
 
         double celsius = sc.nextDouble();
-
+        // Fotmula
         double fahrenheit = (celsius * 9 / 5) + 32;
 
         System.out.println("Fahrenheit = " + fahrenheit);
