@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Fibonacci31 {
-     public static void main(String[] args) {
+    public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
 
@@ -13,10 +13,10 @@ public class Fibonacci31 {
         for (int i = 1; i <= n; i++) {
 
             System.out.print(first + " ");
-
+            // 1 2 3 5 8
             int next = first + second;
             first = second;
             second = next;
         }
-    }    
+    }
 }
