@@ -20,6 +20,7 @@ public class maxEleinArrayy55 {
 
             if (arr[i] > max) {
                 max = arr[i];
+                //comment
             }
         }
 
