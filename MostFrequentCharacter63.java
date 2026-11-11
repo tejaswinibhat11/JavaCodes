@@ -8,10 +8,8 @@ public class MostFrequentCharacter63 {
 
         System.out.println("Enter a string:");
         String str = sc.nextLine();
-
         int max = 0;
         char result = ' ';
-
         for (int i = 0; i < str.length(); i++) {
             int count = 0;
             for (int j = 0; j < str.length(); j++) {
@@ -20,7 +18,6 @@ public class MostFrequentCharacter63 {
                     count++;
                 }
             }
-
             if (count > max) {
                 max = count;
                 result = str.charAt(i);
@@ -28,14 +25,11 @@ public class MostFrequentCharacter63 {
                 result = str.charAt(i);
             }
         }
-
         if (max > 0) {
             System.out.println("Most frequent character: " + result);
             System.out.println("Frequency: " + max);
         } else {
             System.out.println("Empty string");
         }
-
-        sc.close();
     }
 }
