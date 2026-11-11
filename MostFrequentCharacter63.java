@@ -1,0 +1,42 @@
+
+import java.util.Scanner;
+
+public class MostFrequentCharacter63 {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter a string:");
+        String str = sc.nextLine();
+
+        int max = 0;
+        char result = ' ';
+
+        int count = 0;
+        for (int i = 0; i < str.length(); i++) {
+
+            for (int j = 0; j < str.length(); j++) {
+
+                if (str.charAt(i) == str.charAt(j)) {
+                    count++;
+                }
+            }
+
+            if (count > max) {
+                max = count;
+                result = str.charAt(i);
+            } else if (count == max && str.charAt(i) < result) {
+                result = str.charAt(i);
+            }
+        }
+
+        if (max > 0) {
+            System.out.println("Most frequent character: " + result);
+            System.out.println("Frequency: " + max);
+        } else {
+            System.out.println("Empty string");
+        }
+
+        sc.close();
+    }
+}
